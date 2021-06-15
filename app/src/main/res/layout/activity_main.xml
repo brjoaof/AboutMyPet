@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/petName"
+        style="@style/text_title"
+        android:fontFamily="@font/luckiest_guy"
+        android:padding="@dimen/small_padding"
+        android:text="@string/pet_name"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/petImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/star_big_on"
+        android:contentDescription="@string/star_icon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@color/primaryColor">
+
+        <TextView
+            android:id="@+id/petDescription"
+            style="@style/text_description"
+            android:fontFamily="@font/luckiest_guy"
+            android:padding="@dimen/small_padding"
+            android:text="@string/text_pet_description"
+            android:textAlignment="center" />
+
+    </ScrollView>
+
+</LinearLayout>
